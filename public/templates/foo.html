@@ -1,0 +1,142 @@
+<div>
+	<div>
+		<h1>strpos</h1>
+		<p>(PHP 4, PHP 5, PHP 7, PHP 8)</p>
+		<p><span>strpos</span> — <span>Bir alt dizgenin ilkinin konumunu bulur</span></p>
+	</div>
+	<div>
+		<h3>Açıklama</h3>
+		<div>
+			<span><strong>strpos</strong></span>(<span><span><a href="#">string</a></span><code style="cursor: pointer;">$samanlık</code></span>, <span><span class="type"><a href="#">string</a></span> <code style="cursor: pointer;">$iğne</code></span>, <span><span><a>int</a></span> <code style="cursor: pointer;">$başlangıç</code><span> = 0</span></span>): <span><span><a href="#">int</a></span>|<span><a href="#">false</a></span></span></div>
+
+			<p class="para rdfs-comment">
+				<code style="cursor: pointer;">samanlık</code> dizgesi içindeki ilk
+				<code style="cursor: pointer;">iğne</code> dizgesinin sayısal konumunu döndürür.
+			</p>
+		</div>
+
+
+		<div>
+			<h3>Bağımsız Değişkenler</h3>
+			<dl>
+
+				<dt><code style="cursor: pointer;">samanlık</code></dt>
+				<dd>
+					<p>
+						Aramanın yapılacağı dizge.
+					</p>
+				</dd>
+
+
+				<dt><code style="cursor: pointer;">iğne</code></dt>
+				<dd>
+					<p>
+						Aranacak dizge.
+					</p>
+
+					<p>
+						PHP 8.0.0 öncesinde, <code style="cursor: pointer;">iğne</code> bir dizge değilse, bir
+						tamsayıya dönüştürülür ve bir karakterin sıra değeri olarak uygulanırdı.
+						PHP 7.3.0 itibariyle bu davranışın kullanımı önerilmemekte ve güvenilmemesi
+						önerilmektedir.  Amaçlanan davranışa bağlı olarak,
+						<code style="cursor: pointer;">iğne</code> ya doğrudan dizgeye çarpıtılmalı ya da doğrudan
+						bir <span><a href="#">chr()</a></span> çağrısı yapılmalıdır.
+					</p>
+
+				</dd>
+
+
+				<dt><code style="cursor: pointer;">başlangıç</code></dt>
+				<dd>
+					<p>
+						Seçimlik <code style="cursor: pointer;">başlangıç</code> bağımsız değişkeniyle aramanın
+						<code style="cursor: pointer;">samanlık</code> içinde kaçıncı karakterden
+						başlayacağını belirtebilirsiniz. Negatif bir değer belirtilmişse arama
+						sondan <code style="cursor: pointer;">başlangıç</code>ıncı karakterden başlar.
+						Dönen konum yine de <code style="cursor: pointer;">samanlık</code> dizgesinin başına
+						göre olacaktır.
+					</p>
+				</dd>
+
+			</dl>
+
+		</div>
+
+
+		<div>
+			<h3>Dönen Değerler</h3>
+			<p>
+				Konumu <code style="cursor: pointer;">samanlık</code> dizgesinin başına göre
+				(<code style="cursor: pointer;">başlangıç</code>tan bağımsız) bir tamsayı olarak
+				döndürür.Dizgenin ilk karakterinin konumu <code>1</code> değil
+				<code>0</code>'dır.
+			</p>
+			<p>
+				Eğer <code style="cursor: pointer;">iğne</code> bulunamazsa <strong><code><a href="#">false</a></code></strong> döner.
+			</p>
+			<div><strong>Uyarı</strong>
+				<p>Bu işlev mantıksal <strong><code><a href="#">false</a></code></strong>
+					değeriyle dönebileceği gibi <strong><code><a href="#">false</a></code></strong> olarak değerlendirilebilecek mantıksal
+					olmayan bir değerle de dönebilir. Bu konuda daha fazla bilgi
+					<a href="language.types.boolean.php" class="link">Mantıksal Değerler</a> bölümünde
+					bulunabilir. Bu işlevden dönen değeri sınamak için
+					<a href="language.operators.comparison.php" class="link"><code class="literal">===</code>
+					işleci</a> kullanılabilir.</p></div>
+				</div>
+
+
+				<div class="refsect1 changelog" id="refsect1-function.strpos-changelog">
+					<h3 class="title">Sürüm Bilgisi<a class="genanchor" href="#refsect1-function.strpos-changelog"></a></h3>
+					<table class="doctable informaltable">
+
+						<thead>
+							<tr>
+								<th>Sürüm: </th>
+								<th>Açıklama</th>
+							</tr>
+
+						</thead>
+
+						<tbody class="tbody">
+							<tr>
+								<td>8.0.0</td>
+								<td>
+									<code class="parameter" style="cursor: pointer;">iğne</code> artık boş dizge kabul ediyor.
+								</td>
+							</tr>
+
+						</tbody>
+
+					</table>
+
+				</div>
+
+
+				<div class="refsect1 examples" id="refsect1-function.strpos-examples">
+					<h3 class="title">Örnekler<a class="genanchor" href="#refsect1-function.strpos-examples"></a></h3>
+					<div class="example" id="example-4995">
+						<p><strong>Örnek 1 - Aynılık işlecinin (<code class="literal">===</code>) kullanımı</strong></p>
+						<div class="example-contents">
+
+						</div>
+
+					</div> 
+
+				</div>
+
+
+				<div>
+					<h3>Notlar</h3>
+					<blockquote><p><strong>Bilginize</strong>: 
+						<span>Bu işlev ikil dosyalarla çalışırken
+						dosya içeriğini değiştirmez.</span></p></blockquote>
+					</div>
+
+
+					<div>
+						<h3>Ayrıca Bakınız</h3>
+						<ul>
+							<li><span class="function"><a href="#">stripos()</a> - Harf büyüklüğüne duyarsız olarak bir alt dizgenin ilkinin
+							konumunu bulur</span></li>
+						</div>
+
